@@ -1383,6 +1383,11 @@ textarea {
 header {
   background-color: #3890C0;
   color: white; }
+  header .sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #3890C0;
+    color: white; }
   header .top-bar {
     max-width: 75rem;
     margin-right: auto;
@@ -1446,8 +1451,7 @@ header {
 main {
   max-width: 75rem;
   margin-right: auto;
-  margin-left: auto;
-  font-family: 'Roboto', sans-serif; }
+  margin-left: auto; }
   main::before, main::after {
     display: table;
     content: ' ';
@@ -1455,49 +1459,75 @@ main {
     order: 1; }
   main::after {
     clear: both; }
-  main section {
-    width: 66.66667%;
+  main .left {
+    width: 75%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
-    margin-top: 40px; }
+    margin-top: 90px; }
     @media print, screen and (min-width: 40em) {
-      main section {
+      main .left {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    main section:last-child:not(:first-child) {
+    main .left:last-child:not(:first-child) {
       float: right; }
-    main section h1 {
+    main .left section h1 {
       font-weight: 300;
       font-size: 2.5rem;
       color: #640B5F;
       margin: 20px 0px; }
-    main section p {
+    main .left section p {
       line-height: 1.4; }
-    main section h3 {
+    main .left section h3 {
       margin-bottom: 10px; }
-    main section ul {
+    main .left section ul {
       padding-left: 20px;
       margin: 0px; }
-      main section ul li {
+      main .left section ul li {
         padding: 0px; }
-    main section .mobile {
+    main .left #company .mobile {
       background-color: #BBD7C4;
       margin-top: 30px;
       padding: 20px;
       display: flex; }
-      main section .mobile .text {
+      main .left #company .mobile .text {
         width: 85%;
         flex-direction: row; }
-        main section .mobile .text h3 {
+        main .left #company .mobile .text h3 {
           margin-top: 0px;
           color: #640B5F; }
-        main section .mobile .text p {
+        main .left #company .mobile .text p {
           margin: 0px; }
-      main section .mobile .image img {
+      main .left #company .mobile .image img {
         width: 104px;
         height: 177px;
         margin-top: -100px; }
+  main .right {
+    width: 25%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin-top: 90px;
+    padding: 10px; }
+    @media print, screen and (min-width: 40em) {
+      main .right {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main .right:last-child:not(:first-child) {
+      float: right; }
+    main .right button {
+      padding: 7px;
+      border-width: 1px;
+      width: 100%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      background-color: #640B5F;
+      color: white; }
+    main .right .content {
+      background-color: #F5F5F5; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
 
 td {
   width: 10px;
