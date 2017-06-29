@@ -1516,15 +1516,55 @@ main {
     main .right:last-child:not(:first-child) {
       float: right; }
     main .right button {
-      padding: 7px;
+      padding: 10px;
       border-width: 1px;
       width: 100%;
       font-size: 1.3rem;
       font-weight: bold;
       background-color: #640B5F;
-      color: white; }
-    main .right .content {
+      color: white;
+      margin-bottom: 30px; }
+    main .right .content .headers {
+      display: flex; }
+      main .right .content .headers h3 {
+        flex-direction: row;
+        margin: 10px 0px 0px 0px; }
+      main .right .content .headers .news-header {
+        background-color: #DDEBE1;
+        width: 25%;
+        border: solid;
+        border-left: none;
+        border-width: 1px;
+        border-color: gray; }
+      main .right .content .headers .archive-header {
+        background-color: #DDEBE1;
+        width: 35%;
+        border: solid;
+        border-left: none;
+        border-width: 1px;
+        border-color: gray; }
+      main .right .content .headers .blank {
+        width: 45%;
+        border: solid;
+        border: none;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: gray;
+        color: white; }
+      main .right .content .headers .active {
+        background-color: #F5F5F5;
+        border-bottom: none;
+        padding: 10px;
+        margin-top: 0px; }
+    main .right .content .news {
       background-color: #F5F5F5; }
+      main .right .content .news ul {
+        padding: 0px;
+        margin: 0px; }
+        main .right .content .news ul li {
+          list-style: none; }
+          main .right .content .news ul li h3 {
+            margin: 0px; }
 
 body {
   font-family: 'Roboto', sans-serif; }

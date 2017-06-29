@@ -76,21 +76,81 @@ main {
         padding: 10px;
 
         button {
-            padding: 7px;
+            padding: 10px;
             border-width: 1px;
             width: 100%;
             font-size: 1.3rem;
             font-weight: bold;
             background-color: #640B5F;
             color: white;
+            margin-bottom: 30px;
         }
 
         .content {
-            background-color: #F5F5F5;
+
+            .headers {
+                display: flex;
+
+                h3 {
+                    flex-direction: row;
+                    // padding: 10px;
+                    margin: 10px 0px 0px 0px;
+                }
+
+                .news-header {
+                    background-color: #DDEBE1;
+                    width: 25%;
+                    border: solid;
+                    border-left: none;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
+                .archive-header {
+                    background-color: #DDEBE1;
+                    width: 35%;
+                    border: solid;
+                    border-left: none;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
+                .blank {
+                    width: 45%;
+                    border: solid;
+                    border: none;
+                    border-bottom: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                    color: white;
+                }
+
+                .active {
+                    background-color: #F5F5F5;
+                    border-bottom: none;
+                    padding: 10px;
+                    margin-top: 0px;
+                }
+            }
+
+            .news {
+                background-color: #F5F5F5;
+
+                ul {
+                    padding: 0px;
+                    margin: 0px;
+
+                    li {
+                        list-style: none;
+
+                        h3 {
+                            margin: 0px;
+                        }
+                    }
+
+                }
+            }
+
         }
     }
-
-
-
-
 }
