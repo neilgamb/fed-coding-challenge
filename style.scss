@@ -2,6 +2,8 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+@import 'header';
+
 td {
     width: 10px;
     height: 10px;

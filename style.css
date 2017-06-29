@@ -1380,6 +1380,68 @@ textarea {
       .column-block > :last-child {
         margin-bottom: 0; } }
 
+header {
+  background-color: #3890C0;
+  color: white; }
+  header .top-bar {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+    header .top-bar::before, header .top-bar::after {
+      display: table;
+      content: ' ';
+      flex-basis: 0;
+      order: 1; }
+    header .top-bar::after {
+      clear: both; }
+    header .top-bar a {
+      color: white;
+      text-decoration: none; }
+    header .top-bar .title-area {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding: 0p;
+      margin: 0px; }
+      @media print, screen and (min-width: 40em) {
+        header .top-bar .title-area {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      header .top-bar .title-area:last-child:not(:first-child) {
+        float: right; }
+      header .top-bar .title-area li {
+        list-style: none; }
+        header .top-bar .title-area li h1 {
+          margin: 0px; }
+          header .top-bar .title-area li h1 img {
+            margin-bottom: 7px; }
+    header .top-bar .right {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: space-between; }
+      @media print, screen and (min-width: 40em) {
+        header .top-bar .right {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      header .top-bar .right:last-child:not(:first-child) {
+        float: right; }
+      header .top-bar .right li {
+        list-style: none;
+        flex-direction: row;
+        width: 20%;
+        text-align: center;
+        height: 50px; }
+        header .top-bar .right li a {
+          line-height: 48px; }
+      header .top-bar .right .active {
+        background-color: #0D6997; }
+
 td {
   width: 10px;
   height: 10px;

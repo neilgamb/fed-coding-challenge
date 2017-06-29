@@ -1,0 +1,56 @@
+header {
+    background-color: #3890C0;
+    color: white;
+
+    .top-bar {
+        @include grid-row();
+
+        a {color: white; text-decoration: none;};
+
+        .title-area {
+            @include grid-column(6);
+            padding: 0p;
+            margin: 0px;
+
+            li {
+                list-style: none;
+
+                h1 {
+                    margin: 0px;
+
+                    img {
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+        }
+
+        .right {
+            @include grid-column(6);
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                flex-direction: row;
+                width: 20%;
+                text-align: center;
+                height: 50px;
+
+                a {
+                    line-height: 48px;
+                }
+                
+            }
+
+            .active {
+                background-color: #0D6997;
+            }
+        }
+
+    }
+
+}
+
