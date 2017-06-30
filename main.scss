@@ -6,7 +6,6 @@ main {
         margin-top: 90px;
 
         section {
-            // margin-top: 40px;
 
             h1 {
                 font-weight: 300;
@@ -83,7 +82,7 @@ main {
             font-weight: bold;
             background-color: #640B5F;
             color: white;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .content {
@@ -93,22 +92,27 @@ main {
 
                 h3 {
                     flex-direction: row;
+                    text-align: center;
+                    padding: 5px;
+                    margin-bottom: 0px;
+                    color: #4798C3;
                     // padding: 10px;
-                    margin: 10px 0px 0px 0px;
+                    // margin: 10px 0px 0px 0px;
                 }
 
                 .news-header {
                     background-color: #DDEBE1;
-                    width: 25%;
+                    width: 35%;
                     border: solid;
                     border-left: none;
+                    border-right: none;
                     border-width: 1px;
                     border-color: gray;
                 }
 
                 .archive-header {
                     background-color: #DDEBE1;
-                    width: 35%;
+                    width: 45%;
                     border: solid;
                     border-left: none;
                     border-width: 1px;
@@ -116,7 +120,7 @@ main {
                 }
 
                 .blank {
-                    width: 45%;
+                    width: 30%;
                     border: solid;
                     border: none;
                     border-bottom: solid;
@@ -128,29 +132,73 @@ main {
                 .active {
                     background-color: #F5F5F5;
                     border-bottom: none;
-                    padding: 10px;
-                    margin-top: 0px;
+                    margin-top: 5px;
+                    padding-top: 19px;
+                    color: #646464;
                 }
+
+                .active.news-header {
+                    border-right: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
+                .active.archive-header {
+                    border-left: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
             }
 
-            .news {
+            .news, .archive {
                 background-color: #F5F5F5;
+                padding: 15px;
 
                 ul {
                     padding: 0px;
                     margin: 0px;
 
                     li {
+                        margin-top: 20px;
                         list-style: none;
 
                         h3 {
+                            font-weight: bold;
+                            margin: 0px;
+                            color: #4798C3;
+                        }
+
+                        p {
                             margin: 0px;
                         }
-                    }
 
+                    }
                 }
             }
 
+            .archive {
+                
+                ul {
+
+                    li {
+                        margin-top: 10px;
+
+                        a {
+                            margin: 0px;
+                            text-decoration: none;
+                            color: #4798C3;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .hide {
+                display: none;
+            }
         }
     }
 }
+
