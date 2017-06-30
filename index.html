@@ -7,12 +7,13 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
         <script src="app.js"></script>
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="node_modules/jQuery/jquery-3.2.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
 <body>
     <header>
+        <!-- 'sticky' is a foundation methodology for creating fixed elements in grid -->
         <div class="sticky">
             <nav class="top-bar" data-topbar role="navigation">
                 <ul class="title-area">
@@ -29,7 +30,8 @@
                     <a href="#contact"><li>contact</li></a>
                 </ul>
             </nav>
-    
+
+            <!-- This second 'top-bar' is hidden at desktop and present with tablet/mobile -->
             <nav class="top-bar-two" data-topbar role="navigation">
                 <ul class="news-login">
                     <a href="#news">
@@ -49,6 +51,7 @@
             </nav>
         </div>
 
+        <!-- Appears only on mobile -->
         <div class="dropdown-small">
             <i class="fa fa-bars" aria-hidden="true"></i>
             <div class="dropdown-small-content">

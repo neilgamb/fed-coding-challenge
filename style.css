@@ -1643,7 +1643,8 @@ main {
 
 .right {
   margin-top: 90px;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 0; }
   .right .sticky {
     position: fixed;
     width: 30%; }
@@ -1750,7 +1751,8 @@ footer {
   background-color: #E7E8E9;
   color: white;
   height: 100px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  z-index: 1; }
   footer .footer-bar {
     max-width: 75rem;
     margin-right: auto;
@@ -1953,6 +1955,9 @@ button:focus {
         padding-left: 0.9375rem; } }
 @media (max-width: 750px) {
       footer .footer-bar .right:last-child:not(:first-child) {
-        float: right; } }
+        float: right; }
+
+  .overlay-message {
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

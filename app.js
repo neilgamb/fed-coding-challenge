@@ -16,6 +16,8 @@ window.addEventListener('load', function () {
         $("tr:odd").css("background-color", "#EEF5F0");
     });
 
+    // Add / remove "active" class to navigation li's on header and footer
+    // for styling purposes
     $('document').ready(function () {
         $('#links a').click(function (e) {
             $('#links a').removeClass('active');
@@ -24,7 +26,7 @@ window.addEventListener('load', function () {
         });
     });
 
-    // sidebar navigation toggle
+    // sidebar navigation toggle "active" class for styling changes
     $("#newsButton").click(function () {
         $(".headers > .active").removeClass('active');
         $(".news-header").addClass('active');

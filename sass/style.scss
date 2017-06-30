@@ -1,0 +1,103 @@
+@import '../node_modules/foundation-sites/scss/foundation';
+@include foundation-global-styles;
+@include foundation-grid;
+
+@import 'header';
+@import 'left';
+@import 'right';
+@import 'footer';
+@import 'signon';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+}
+
+.offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 50px;    
+        margin-top: -50px; 	
+        visibility: hidden; 
+}
+
+button:focus {
+  outline: none;
+}
+
+// Responsive Design
+@media (max-width: 1050px) { 
+
+    header {
+        .sticky {
+            .top-bar-two{
+                display: block;
+            }
+        }
+    }
+
+    .right {
+        display: none;
+    }
+
+    #home {
+        h1 {
+            margin-top: 80px;
+        }
+    }
+
+    main {
+        @include grid-row();
+
+        .left {
+            @include grid-column(12);
+        }
+
+    }
+ }
+
+ @media (max-width: 750px){
+
+     header {
+         .sticky {
+             .top-bar {
+
+                 .navlinks {
+                     display: none;
+                 }
+             }
+
+             .top-bar-two {
+                 display: none;
+             }
+         }
+
+         .dropdown-small {
+             display: block;
+         }
+     }
+
+     #home {
+         h1 {
+             margin-top: 40px;
+         }
+     }
+
+     footer {
+         .footer-bar {
+            @include grid-row();
+
+            .copy-area {
+                @include grid-column(3);
+            }
+
+            .right {
+                @include grid-column(9);
+            }
+         }
+     }
+
+     .overlay-message {
+         width: 300px;
+     }
+ }
