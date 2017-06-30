@@ -1381,74 +1381,178 @@ textarea {
         margin-bottom: 0; } }
 
 header {
-  background-color: #3890C0;
   color: white; }
   header .sticky {
     position: fixed;
     width: 100%;
     background-color: #3890C0;
-    color: white; }
-  header .top-bar {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto; }
-    header .top-bar::before, header .top-bar::after {
-      display: table;
-      content: ' ';
-      flex-basis: 0;
-      order: 1; }
-    header .top-bar::after {
-      clear: both; }
-    header .top-bar a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold; }
-    header .top-bar .title-area {
-      width: 50%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      padding: 0p;
-      margin: 0px; }
-      @media print, screen and (min-width: 40em) {
-        header .top-bar .title-area {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      header .top-bar .title-area:last-child:not(:first-child) {
-        float: right; }
-      header .top-bar .title-area li {
-        list-style: none; }
-        header .top-bar .title-area li h1 {
-          margin: 0px; }
-          header .top-bar .title-area li h1 img {
-            margin-bottom: 7px; }
-    header .top-bar .right {
-      width: 50%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      padding: 0px;
-      margin: 0px;
-      display: flex;
-      justify-content: space-between; }
-      @media print, screen and (min-width: 40em) {
-        header .top-bar .right {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      header .top-bar .right:last-child:not(:first-child) {
-        float: right; }
-      header .top-bar .right a {
-        flex-direction: row;
-        width: 20%;
+    color: white;
+    z-index: 0; }
+    header .sticky .top-bar {
+      max-width: 75rem;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #3890C0; }
+      header .sticky .top-bar::before, header .sticky .top-bar::after {
+        display: table;
+        content: ' ';
+        flex-basis: 0;
+        order: 1; }
+      header .sticky .top-bar::after {
+        clear: both; }
+      header .sticky .top-bar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; }
+      header .sticky .top-bar .title-area {
+        width: 16.66667%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        padding: 0p;
+        margin: 0px; }
+        @media print, screen and (min-width: 40em) {
+          header .sticky .top-bar .title-area {
+            padding-right: 0.9375rem;
+            padding-left: 0.9375rem; } }
+        header .sticky .top-bar .title-area:last-child:not(:first-child) {
+          float: right; }
+        header .sticky .top-bar .title-area li {
+          list-style: none; }
+          header .sticky .top-bar .title-area li h1 {
+            margin: 0px; }
+            header .sticky .top-bar .title-area li h1 img {
+              margin-bottom: 7px;
+              max-width: 230px;
+              max-height: 95px;
+              width: auto;
+              height: auto; }
+      header .sticky .top-bar .navlinks {
+        width: 83.33333%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        padding: 0px;
+        margin: 0px;
         text-align: right; }
-        header .top-bar .right a li {
+        @media print, screen and (min-width: 40em) {
+          header .sticky .top-bar .navlinks {
+            padding-right: 0.9375rem;
+            padding-left: 0.9375rem; } }
+        header .sticky .top-bar .navlinks:last-child:not(:first-child) {
+          float: right; }
+        header .sticky .top-bar .navlinks a {
+          width: 100px;
+          text-align: right;
+          display: inline-block; }
+          header .sticky .top-bar .navlinks a li {
+            list-style: none;
+            flex-direction: row;
+            text-align: center;
+            height: 50px;
+            line-height: 50px; }
+        header .sticky .top-bar .navlinks .hide {
+          display: none; }
+        header .sticky .top-bar .navlinks .active {
+          background-color: #0D6997; }
+    header .sticky .top-bar-two {
+      max-width: 75rem;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #F5F5F5;
+      display: none; }
+      header .sticky .top-bar-two::before, header .sticky .top-bar-two::after {
+        display: table;
+        content: ' ';
+        flex-basis: 0;
+        order: 1; }
+      header .sticky .top-bar-two::after {
+        clear: both; }
+      header .sticky .top-bar-two .news-login {
+        width: 100%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        padding: 0px;
+        margin: 0px;
+        text-align: right; }
+        @media print, screen and (min-width: 40em) {
+          header .sticky .top-bar-two .news-login {
+            padding-right: 0.9375rem;
+            padding-left: 0.9375rem; } }
+        header .sticky .top-bar-two .news-login:last-child:not(:first-child) {
+          float: right; }
+        header .sticky .top-bar-two .news-login a, header .sticky .top-bar-two .news-login button {
+          width: 100px;
+          color: #646464;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          text-align: center; }
+          header .sticky .top-bar-two .news-login a li, header .sticky .top-bar-two .news-login button li {
+            list-style: none;
+            text-align: center;
+            height: 50px;
+            line-height: 50px; }
+        header .sticky .top-bar-two .news-login .dropdown {
+          position: relative; }
+        header .sticky .top-bar-two .news-login .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          line-height: 1; }
+        header .sticky .top-bar-two .news-login .dropdown:hover .dropdown-content {
+          display: block; }
+        header .sticky .top-bar-two .news-login button {
+          background-color: #640B5F;
+          color: white; }
+        header .sticky .top-bar-two .news-login .hide {
+          display: none; }
+        header .sticky .top-bar-two .news-login .active {
+          background-color: #0D6997; }
+  header .fa {
+    color: white; }
+  header .dropdown-small {
+    font-size: 2.5rem;
+    position: fixed;
+    top: -5px;
+    right: 10px;
+    color: white;
+    z-index: 2;
+    display: none; }
+  header .dropdown-small-content {
+    text-align: right;
+    display: none;
+    color: #646464;
+    position: absolute;
+    font-size: 1rem;
+    right: 0px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    line-height: 1; }
+    header .dropdown-small-content ul {
+      padding: 0px;
+      margin: 0px; }
+      header .dropdown-small-content ul a, header .dropdown-small-content ul button {
+        text-decoration: none;
+        color: #646464; }
+        header .dropdown-small-content ul a li, header .dropdown-small-content ul button li {
           list-style: none;
-          flex-direction: row;
+          padding: 10px 0px;
           text-align: center;
-          height: 50px;
-          line-height: 50px; }
-      header .top-bar .right .active {
-        background-color: #0D6997; }
+          border-top: solid;
+          border-width: 1px; }
+      header .dropdown-small-content ul button {
+        background-color: #640B5F;
+        color: white;
+        min-width: 160px; }
+  header .dropdown-small:hover .dropdown-small-content {
+    display: block; }
 
 main {
   max-width: 75rem;
@@ -1765,9 +1869,90 @@ body {
   display: block;
   content: " ";
   height: 50px;
-  /* Give height of your fixed element */
   margin-top: -50px;
-  /* Give negative margin of your fixed element */
   visibility: hidden; }
+
+button:focus {
+  outline: none; }
+
+@media (max-width: 1050px) {
+  header .sticky .top-bar-two {
+    display: block; }
+
+  .right {
+    display: none; }
+
+  #home h1 {
+    margin-top: 80px; }
+
+  main {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+    main::before, main::after {
+      display: table;
+      content: ' ';
+      flex-basis: 0;
+      order: 1; }
+    main::after {
+      clear: both; }
+    main .left {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+    @media print and (max-width: 1050px), screen and (max-width: 1050px) and (min-width: 40em) {
+      main .left {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (max-width: 1050px) {
+      main .left:last-child:not(:first-child) {
+        float: right; } }
+@media (max-width: 750px) {
+  header .sticky .top-bar .navlinks {
+    display: none; }
+  header .sticky .top-bar-two {
+    display: none; }
+  header .dropdown-small {
+    display: block; }
+
+  #home h1 {
+    margin-top: 40px; }
+
+  footer .footer-bar {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+    footer .footer-bar::before, footer .footer-bar::after {
+      display: table;
+      content: ' ';
+      flex-basis: 0;
+      order: 1; }
+    footer .footer-bar::after {
+      clear: both; }
+    footer .footer-bar .copy-area {
+      width: 25%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+    @media print and (max-width: 750px), screen and (max-width: 750px) and (min-width: 40em) {
+      footer .footer-bar .copy-area {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (max-width: 750px) {
+      footer .footer-bar .copy-area:last-child:not(:first-child) {
+        float: right; }
+    footer .footer-bar .right {
+      width: 75%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+    @media print and (max-width: 750px), screen and (max-width: 750px) and (min-width: 40em) {
+      footer .footer-bar .right {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (max-width: 750px) {
+      footer .footer-bar .right:last-child:not(:first-child) {
+        float: right; } }
 
 /*# sourceMappingURL=style.css.map */

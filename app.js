@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
     // Signon Overlay
     $(".overlay, .overlay-message").hide();
 
-    $("#login").click(function () {
+    $(".login").click(function () {
         $(".overlay, .overlay-message").show();
 
         $("#submit").click(function () {

@@ -5,6 +5,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
         <script src="app.js"></script>
         <script src="jquery-3.2.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,23 +15,53 @@
     <header>
         <div class="sticky">
             <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <li class="name">
-                <h1><a href="#"><img src="assets/img/urbank.png"></a></h1>
-                </li>
-            </ul>
+                <ul class="title-area">
+                    <li class="name">
+                    <h1><a href="#"><img src="assets/img/urbank.png"></a></h1>
+                    </li>
+                </ul>
 
-            <section class="top-bar-section">
-                <!-- Right Nav Section -->
-                <ul class="right" id="links">
+                <ul class="navlinks" id="links">
                     <a href="#home" class="active"><li>home</li></a>
                     <a href="#employee"><li>employee</li></a>
                     <a href="#company"><li>company</li></a>
                     <a href="#services"><li>services</li></a>
                     <a href="#contact"><li>contact</li></a>
                 </ul>
-            </section>
             </nav>
+    
+            <nav class="top-bar-two" data-topbar role="navigation">
+                <ul class="news-login">
+                    <a href="#news">
+                        <li class="dropdown">  
+                            <span>news</span>
+                            <div class="dropdown-content">
+                                <p>Lorem ipsum dolor</p>
+                                <p>Lorem ipsum dolor</p>
+                                <p>Lorem ipsum dolor</p>
+                                <p>Lorem ipsum dolor</p>
+                                <p>Lorem ipsum dolor</p>
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                        </li></a>
+                    <button class="login"><li>login</li></button>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dropdown-small">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div class="dropdown-small-content">
+                <ul class="navlinks">
+                    <a href="#home" class="active"><li>home</li></a>
+                    <a href="#employee"><li>employee</li></a>
+                    <a href="#company"><li>company</li></a>
+                    <a href="#services"><li>services</li></a>
+                    <a href="#contact"><li>contact</li></a>
+                    <a href="#news"><li>news</li></a>
+                    <button class="login"><li>login</li></button>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -129,7 +160,7 @@
         <div class="right">
             <div class="sticky">
                 <nav class="side-bar">
-                    <button id="login">Login</button>
+                    <button class="login">Login</button>
                     <div class="content">
                         <section class="headers">
                             <h3 class="active news-header"><button id="newsButton">News</button></h3>
