@@ -19,6 +19,7 @@ footer {
 
         }
 
+
         .right {
             @include grid-column(6);
             padding: 0px;
@@ -26,19 +27,20 @@ footer {
             display: flex;
             justify-content: space-between;
 
-            li {
-                list-style: none;
+            a {
                 flex-direction: row;
                 width: 20%;
-                text-align: center;
-                height: 50px;
+                text-align: right;
+                text-decoration: none;
+                color: #0D6997;
 
-                a {
+                li {
+                    list-style: none;
+                    flex-direction: row;
+                    text-align: center;
+                    height: 50px;
                     line-height: 50px;
-                    text-decoration: none;
-                    color: #0D6997;
                 }
-                
             }
 
             .active {

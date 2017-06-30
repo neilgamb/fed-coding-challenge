@@ -46,17 +46,18 @@ header {
             display: flex;
             justify-content: space-between;
 
-            li {
-                list-style: none;
+            a {
                 flex-direction: row;
                 width: 20%;
-                text-align: center;
-                height: 50px;
+                text-align: right;
 
-                a {
-                    line-height: 48px;
+                li {
+                    list-style: none;
+                    flex-direction: row;
+                    text-align: center;
+                    height: 50px;
+                    line-height: 50px;
                 }
-                
             }
 
             .active {

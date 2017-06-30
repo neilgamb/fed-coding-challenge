@@ -1437,14 +1437,16 @@ header {
           padding-left: 0.9375rem; } }
       header .top-bar .right:last-child:not(:first-child) {
         float: right; }
-      header .top-bar .right li {
-        list-style: none;
+      header .top-bar .right a {
         flex-direction: row;
         width: 20%;
-        text-align: center;
-        height: 50px; }
-        header .top-bar .right li a {
-          line-height: 48px; }
+        text-align: right; }
+        header .top-bar .right a li {
+          list-style: none;
+          flex-direction: row;
+          text-align: center;
+          height: 50px;
+          line-height: 50px; }
       header .top-bar .right .active {
         background-color: #0D6997; }
 
@@ -1675,21 +1677,32 @@ footer {
           padding-left: 0.9375rem; } }
       footer .footer-bar .right:last-child:not(:first-child) {
         float: right; }
-      footer .footer-bar .right li {
-        list-style: none;
+      footer .footer-bar .right a {
         flex-direction: row;
         width: 20%;
-        text-align: center;
-        height: 50px; }
-        footer .footer-bar .right li a {
-          line-height: 50px;
-          text-decoration: none;
-          color: #0D6997; }
+        text-align: right;
+        text-decoration: none;
+        color: #0D6997; }
+        footer .footer-bar .right a li {
+          list-style: none;
+          flex-direction: row;
+          text-align: center;
+          height: 50px;
+          line-height: 50px; }
       footer .footer-bar .right .active {
         font-weight: bold; }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #646464; }
+
+.offset:before {
+  display: block;
+  content: " ";
+  height: 50px;
+  /* Give height of your fixed element */
+  margin-top: -50px;
+  /* Give negative margin of your fixed element */
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */
