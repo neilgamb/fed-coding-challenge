@@ -5,7 +5,7 @@ main {
 
     .left {
         @include grid-column(9);
-        margin-top: 90px;
+        margin-top: 50px;
 
         // All sections (home, employee, company, etc) have these styles:
         section {
@@ -14,7 +14,7 @@ main {
                 font-weight: 300;
                 font-size: 2.5rem;
                 color: #640B5F;
-                margin: 20px 0px;
+                margin: 40px 0px 10px 0px;
             }
 
             p {

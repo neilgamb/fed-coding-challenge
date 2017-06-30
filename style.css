@@ -1466,7 +1466,7 @@ main {
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
-    margin-top: 90px; }
+    margin-top: 50px; }
     @media print, screen and (min-width: 40em) {
       main .left {
         padding-right: 0.9375rem;
@@ -1477,7 +1477,7 @@ main {
       font-weight: 300;
       font-size: 2.5rem;
       color: #640B5F;
-      margin: 20px 0px; }
+      margin: 40px 0px 10px 0px; }
     main .left section p {
       line-height: 1.4; }
     main .left section h3 {
