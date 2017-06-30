@@ -1502,107 +1502,194 @@ main {
         width: 104px;
         height: 177px;
         margin-top: -100px; }
-  main .right {
-    width: 25%;
-    float: left;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    margin-top: 90px;
-    padding: 10px; }
-    @media print, screen and (min-width: 40em) {
-      main .right {
-        padding-right: 0.9375rem;
-        padding-left: 0.9375rem; } }
-    main .right:last-child:not(:first-child) {
-      float: right; }
-    main .right button {
-      padding: 10px;
-      border-width: 1px;
+    main .left #company .rates h2 {
+      display: inline-block;
+      padding: 0px 10px;
+      font-weight: 400;
+      margin: 50px 0px 10px 0px; }
+    main .left #company .rates #rates {
+      font-weight: 100;
+      border-right: solid;
+      border-width: 1px; }
+    main .left #company .rates table {
       width: 100%;
-      font-size: 1.3rem;
-      font-weight: bold;
-      background-color: #640B5F;
-      color: white;
-      margin-bottom: 20px; }
-    main .right .content .headers {
-      display: flex; }
-      main .right .content .headers h3 {
-        flex-direction: row;
-        text-align: center;
-        padding: 5px;
-        margin-bottom: 0px;
-        color: #4798C3; }
-      main .right .content .headers .news-header {
-        background-color: #DDEBE1;
-        width: 35%;
-        border: solid;
-        border-left: none;
-        border-right: none;
-        border-width: 1px;
-        border-color: gray; }
-      main .right .content .headers .archive-header {
-        background-color: #DDEBE1;
-        width: 45%;
-        border: solid;
-        border-left: none;
-        border-width: 1px;
-        border-color: gray; }
-      main .right .content .headers .blank {
-        width: 30%;
-        border: solid;
-        border: none;
-        border-bottom: solid;
-        border-width: 1px;
-        border-color: gray;
-        color: white; }
-      main .right .content .headers .active {
-        background-color: #F5F5F5;
-        border-bottom: none;
-        margin-top: 5px;
-        padding-top: 19px;
-        color: #646464; }
-      main .right .content .headers .active.news-header {
-        border-right: solid;
-        border-width: 1px;
-        border-color: gray; }
-      main .right .content .headers .active.archive-header {
-        border-left: solid;
-        border-width: 1px;
-        border-color: gray; }
-    main .right .content .news, main .right .content .archive {
+      border: none;
+      border-spacing: 0;
+      border-collapse: collapse; }
+      main .left #company .rates table tbody th {
+        font-size: .9rem;
+        font-weight: 300; }
+      main .left #company .rates table tbody .bank {
+        width: 50%; }
+      main .left #company .rates table tbody td {
+        padding: 10px 0px; }
+      main .left #company .rates table tbody th:last-child,
+      main .left #company .rates table tbody td:last-child,
+      main .left #company .rates table tbody th:nth-last-child(2),
+      main .left #company .rates table tbody td:nth-last-child(2) {
+        padding-right: 20px;
+        text-align: right; }
+    main .left #company .rates .disclaim {
+      font-size: .8rem;
+      width: 100%;
+      text-align: right;
+      margin-top: 5px; }
+
+.right {
+  width: 25%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  margin-top: 90px;
+  padding: 10px; }
+  @media print, screen and (min-width: 40em) {
+    .right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  .right:last-child:not(:first-child) {
+    float: right; }
+  .right button {
+    padding: 10px;
+    border-width: 1px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #640B5F;
+    color: white;
+    margin-bottom: 20px; }
+  .right .content .headers {
+    display: flex; }
+    .right .content .headers h3 {
+      flex-direction: row;
+      text-align: center;
+      padding: 5px;
+      margin-bottom: 0px;
+      color: #4798C3; }
+    .right .content .headers .news-header {
+      background-color: #DDEBE1;
+      width: 35%;
+      border: solid;
+      border-left: none;
+      border-right: none;
+      border-width: 1px;
+      border-color: gray; }
+    .right .content .headers .archive-header {
+      background-color: #DDEBE1;
+      width: 45%;
+      border: solid;
+      border-left: none;
+      border-width: 1px;
+      border-color: gray; }
+    .right .content .headers .blank {
+      width: 30%;
+      border: solid;
+      border: none;
+      border-bottom: solid;
+      border-width: 1px;
+      border-color: gray;
+      color: white; }
+    .right .content .headers .active {
       background-color: #F5F5F5;
-      padding: 15px; }
-      main .right .content .news ul, main .right .content .archive ul {
-        padding: 0px;
-        margin: 0px; }
-        main .right .content .news ul li, main .right .content .archive ul li {
-          margin-top: 20px;
-          list-style: none; }
-          main .right .content .news ul li h3, main .right .content .archive ul li h3 {
-            font-weight: bold;
-            margin: 0px;
-            color: #4798C3; }
-          main .right .content .news ul li p, main .right .content .archive ul li p {
-            margin: 0px; }
-    main .right .content .archive ul li {
-      margin-top: 10px; }
-      main .right .content .archive ul li a {
-        margin: 0px;
-        text-decoration: none;
-        color: #4798C3;
-        font-size: 1.2rem;
+      border-bottom: none;
+      margin-top: 5px;
+      padding-top: 19px;
+      color: #646464; }
+    .right .content .headers .active.news-header {
+      border-right: solid;
+      border-width: 1px;
+      border-color: gray; }
+    .right .content .headers .active.archive-header {
+      border-left: solid;
+      border-width: 1px;
+      border-color: gray; }
+  .right .content .news, .right .content .archive {
+    background-color: #F5F5F5;
+    padding: 15px; }
+    .right .content .news ul, .right .content .archive ul {
+      padding: 0px;
+      margin: 0px; }
+      .right .content .news ul li, .right .content .archive ul li {
+        margin-top: 20px;
+        list-style: none; }
+        .right .content .news ul li h3, .right .content .archive ul li h3 {
+          font-weight: bold;
+          margin: 0px;
+          color: #4798C3; }
+        .right .content .news ul li p, .right .content .archive ul li p {
+          margin: 0px; }
+  .right .content .archive ul li {
+    margin-top: 10px; }
+    .right .content .archive ul li a {
+      margin: 0px;
+      text-decoration: none;
+      color: #4798C3;
+      font-size: 1.2rem;
+      font-weight: bold; }
+  .right .content .hide {
+    display: none; }
+
+footer {
+  background-color: #E7E8E9;
+  color: white;
+  height: 100px;
+  margin-top: 60px; }
+  footer .footer-bar {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+    footer .footer-bar::before, footer .footer-bar::after {
+      display: table;
+      content: ' ';
+      flex-basis: 0;
+      order: 1; }
+    footer .footer-bar::after {
+      clear: both; }
+    footer .footer-bar .copy-area {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding: 0p;
+      margin: 0px;
+      color: #0D6997;
+      height: 50px;
+      line-height: 50px; }
+      @media print, screen and (min-width: 40em) {
+        footer .footer-bar .copy-area {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      footer .footer-bar .copy-area:last-child:not(:first-child) {
+        float: right; }
+    footer .footer-bar .right {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: space-between; }
+      @media print, screen and (min-width: 40em) {
+        footer .footer-bar .right {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      footer .footer-bar .right:last-child:not(:first-child) {
+        float: right; }
+      footer .footer-bar .right li {
+        list-style: none;
+        flex-direction: row;
+        width: 20%;
+        text-align: center;
+        height: 50px; }
+        footer .footer-bar .right li a {
+          line-height: 50px;
+          text-decoration: none;
+          color: #0D6997; }
+      footer .footer-bar .right .active {
         font-weight: bold; }
-    main .right .content .hide {
-      display: none; }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #646464; }
-
-td {
-  width: 10px;
-  height: 10px;
-  border: solid;
-  border-width: 1px; }
 
 /*# sourceMappingURL=style.css.map */

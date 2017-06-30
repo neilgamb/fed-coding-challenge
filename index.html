@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
         <script src="app.js"></script>
+        <script src="jquery-3.2.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
@@ -36,29 +37,9 @@
     <main>
         <div class="left">
             <!--<section id="home">
-                <h1>Welcome!</h1>
-                <p>Cum salvum esse flentes sui respondissent, rogavit essentne fusi 
-                    hostes. Ut aliquid scire se gaudeant? Verum hoc loco sumo verbis his eandem certe vim 
-                    voluptatis Epicurum nosse quam ceteros.</p>
-
-                <ul>Big Ideas
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Vestibulum auctor dapibus neque.</li>
-                </ul>
             </section>
 
             <section id="employee">
-                <h1>We Value our Team</h1>
-                <p>Qui autem de summo bono dissentit de tota philosophiae 
-                    ratione dissentit. Cum salvum esse flentes sui respondissent, rogavit essentne fusi 
-                    hostes. Ut aliquid scire se gaudeant? Verum hoc loco sumo verbis his eandem certe vim 
-                    voluptatis Epicurum nosse quam ceteros.</p>
-
-                <ul>We Value Teamwork
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Vestibulum auctor dapibus neque.</li>
-                </ul>
             </section>-->
 
             <section id="company">
@@ -89,43 +70,18 @@
                 </div>
 
                 <div class="rates">
-                    <h2>Rates  |  Check them out.</h2>
-                    <table >
+                    <h2 id="rates">Rates</h2><h2>Check them out.</h2>
+                    <table id="thetable">
                         <tbody>
                             <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
+                                <th class="bank"></th>
+                                <th class="apy">Annual Percentage Yield</th>
+                                <th class="earnings">Est. Earnings for 1 Year*</th>
                             </tr>
                         </tbody>
                     </table>
+                    <p class="disclaim">*Based on $50,000 depoist.</p>
                 </div>
-
             </section>
 
             <!--<section id="services">
@@ -135,7 +91,7 @@
             </section>-->
         </div>
 
-        <div class="right sticky">
+        <div class="right">
             <button>Login</button>
             
             <div class="content">
@@ -180,7 +136,20 @@
     </main>
 
     <footer>
+        <nav class="footer-bar">
+        <p class="copy-area">©2014 URBank</p>
 
+        <section class="footer-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="#home">home</a></li>
+                <li><a href="#employee">employee</a></li>
+                <li class="active"><a href="#company">company</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </section>
+        </nav>
     </footer>
 </body>
 </html>

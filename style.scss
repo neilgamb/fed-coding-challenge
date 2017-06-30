@@ -3,16 +3,12 @@
 @include foundation-grid;
 
 @import 'header';
-@import 'main';
+@import 'left';
+@import 'right';
+@import 'footer';
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #646464;
 }
 
-td {
-    width: 10px;
-    height: 10px;
-    border: solid;
-    border-width: 1px;
-}

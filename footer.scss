@@ -1,0 +1,53 @@
+// footer / navigation styling
+
+footer {
+    background-color: #E7E8E9;
+    color: white;
+    height: 100px;
+    margin-top: 60px;
+
+    .footer-bar {
+        @include grid-row();
+
+        .copy-area {
+            @include grid-column(6);
+            padding: 0p;
+            margin: 0px;
+            color: #0D6997;
+            height: 50px;
+            line-height: 50px;
+
+        }
+
+        .right {
+            @include grid-column(6);
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                flex-direction: row;
+                width: 20%;
+                text-align: center;
+                height: 50px;
+
+                a {
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: #0D6997;
+                }
+                
+            }
+
+            .active {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+
+}
+
