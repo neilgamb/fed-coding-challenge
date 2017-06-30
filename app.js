@@ -41,5 +41,22 @@ window.addEventListener('load', function () {
         $(".news").addClass('hide');
         $(".archive").removeClass('hide');
     });
+
+    
+    // Signon Overlay
+    $(".overlay, .overlay-message").hide();
+
+    $("#login").click(function () {
+        $(".overlay, .overlay-message").show();
+
+        $("#submit").click(function () {
+            $(".overlay, .overlay-message").hide();
+        });
+
+        $("#cancel").click(function () {
+            $(".overlay, .overlay-message").hide();
+        });
+    });
+
 });
 
