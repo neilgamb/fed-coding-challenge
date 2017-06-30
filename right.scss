@@ -1,10 +1,10 @@
     .right {
-        
         margin-top: 90px;
         padding: 10px;
 
     .sticky {
         position: fixed;
+        width: 30%;
     
     .side-bar {
         @include grid-column(9);
@@ -31,6 +31,13 @@
                     padding: 5px;
                     margin-bottom: 0px;
                     color: #4798C3;
+                }
+
+                #newsButton, #archiveButton {
+                    color: inherit;
+                    margin: 0px;
+                    padding: 0px;
+                    background-color: inherit;
                 }
 
                 .news-header {

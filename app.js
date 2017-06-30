@@ -24,5 +24,22 @@ window.addEventListener('load', function () {
         });
     });
 
+    // sidebar navigation toggle
+    $("#newsButton").click(function () {
+        $(".headers > .active").removeClass('active');
+        $(".news-header").addClass('active');
+
+        $(".archive").addClass('hide');
+        $(".news").removeClass('hide');
+
+    });
+
+    $("#archiveButton").click(function () {
+        $(".headers > .active").removeClass('active');
+        $(".archive-header").addClass('active');
+
+        $(".news").addClass('hide');
+        $(".archive").removeClass('hide');
+    });
 });
 

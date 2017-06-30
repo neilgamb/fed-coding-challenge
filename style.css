@@ -1541,7 +1541,8 @@ main {
   margin-top: 90px;
   padding: 10px; }
   .right .sticky {
-    position: fixed; }
+    position: fixed;
+    width: 30%; }
     .right .sticky .side-bar {
       width: 75%;
       float: left;
@@ -1570,6 +1571,11 @@ main {
           padding: 5px;
           margin-bottom: 0px;
           color: #4798C3; }
+        .right .sticky .side-bar .content .headers #newsButton, .right .sticky .side-bar .content .headers #archiveButton {
+          color: inherit;
+          margin: 0px;
+          padding: 0px;
+          background-color: inherit; }
         .right .sticky .side-bar .content .headers .news-header {
           background-color: #DDEBE1;
           width: 35%;
