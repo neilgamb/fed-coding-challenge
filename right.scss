@@ -1,7 +1,13 @@
     .right {
-        @include grid-column(3);
+        
         margin-top: 90px;
         padding: 10px;
+
+    .sticky {
+        position: fixed;
+    
+    .side-bar {
+        @include grid-column(9);
 
         button {
             padding: 10px;
@@ -127,3 +133,12 @@
             }
         }
     }
+}
+}
+
+
+    
+
+.right:last-child:not(:first-child) {
+    float: left; 
+}

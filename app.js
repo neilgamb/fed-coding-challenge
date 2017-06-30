@@ -16,12 +16,13 @@ window.addEventListener('load', function () {
         $("tr:odd").css("background-color", "#EEF5F0");
     });
 
-$('document').ready(function() {
-    $('#links a').click(function(e) {
-        $('#links a').removeClass('active');
-        $('#footer-links a').removeClass('active');
-        $(this).addClass('active');
+    $('document').ready(function () {
+        $('#links a').click(function (e) {
+            $('#links a').removeClass('active');
+            $('#footer-links a').removeClass('active');
+            $(this).addClass('active');
+        });
     });
-});
 
 });
+
